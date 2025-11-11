@@ -59,5 +59,15 @@ function executeWork(employee: Director | Teacher): string {
     }
 }
 
+function teachClass(todayClass: string): string {
+    if (todayClass === 'Math') {
+        return 'Teaching Math';
+    }
+    else if (todayClass === 'History') {
+        return 'Teaching History';
+    }
+    return 'No class today';
+}
+
 console.log(executeWork(createEmployee(200)));
 console.log(executeWork(createEmployee(1000)));
